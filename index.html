@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>Untuk Kamu 💖</title>
+
+<style>
+body{
+  margin:0;
+  background:black;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  height:100vh;
+  font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+}
+
+.container{
+  width:360px;
+  height:640px;
+  position:relative;
+  overflow:hidden;
+  border-radius:20px;
+}
+
+.slide{
+  position:absolute;
+  width:100%;
+  height:100%;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  flex-direction:column;
+  text-align:center;
+  color:white;
+  background:url('bg.jpg') center/cover;
+  opacity:0;
+  transition:.4s;
+}
+
+.active{opacity:1; z-index:1;}
+
+.text-box{
+  background:rgba(0,0,0,0.4);
+  padding:15px;
+  border-radius:15px;
+}
+
+button{
+  margin:6px;
+  padding:8px 14px;
+  border:none;
+  border-radius:14px;
+  background:white;
+  cursor:pointer;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<!-- AWAL -->
+<div class="slide active" id="awal">
+<div class="text-box">hai, abel</div>
+<button onclick="show('tanya')">lanjut</button>
+</div>
+
+<!-- PERTANYAAN -->
+<div class="slide" id="tanya">
+<div class="text-box">gimana hari ini?</div>
+<button onclick="show('senang1')">senang 😊</button>
+<button onclick="show('game1')">biasa aja 😐</button>
+<button onclick="show('sedih')">sedih 😔</button>
+</div>
+
+<!-- SENANG FLOW -->
+<div class="slide" id="senang1">
+<div class="text-box">yeayy kamu seneng, aku juga seneng. karna kamu lagi seneng aku mau bilang sesuatu hehe</div>
+<button onclick="show('senang2')">lanjut</button>
+</div>
+
+<div class="slide" id="senang2">
+<div class="text-box">pertama aku mau ucapin banyak terimakasih sama kamu, makasi udah mau kenal sama aku, mau nemenin aku terus sampe saat ini, makasi juga udah berbagi tentang kisah hidup kamu. intinya banyak makasi yang sulit diungkap, sayang.</div>
+<button onclick="show('senang3')">lanjut</button>
+</div>
+
+<div class="slide" id="senang3">
+<div class="text-box">sayang, kamu tau kan kamu cantik? udah pasti tau lah, rahasia umum. cantik luar dalem tau gak, hehe. kamu juga baik, kamu penyabar walau suka maki, tapi lucu. setiap kamu marah, kamu ngambek, kamu ange hehe kamu lucu, selalu lucu sayang. yang paling bikin aku kagum dari kamu adalah kamu pekerja keras, beneran kagum:(.</div>
+<button onclick="show('senang4')">lanjut</button>
+</div>
+
+<div class="slide" id="senang4">
+<div class="text-box">banyak lagi dari diri kamu yang aku suka, mungkin ga aku ungkapi semua di sini karna kamu tau ga? kalo aku ga bisa mikir banyak kata. sayang, 1000 kata juga ga bakal cukup buat ungkapi apa yang aku suka dari kamu.</div>
+<button onclick="show('senang5')">lanjut</button>
+</div>
+
+<div class="slide" id="senang5">
+<div class="text-box">aku juga mau minta maaf sama semua sikap aku, sikap yang suka diamin kamu, atau aku pernah marahin kamu, dan banyaknya sikap buruk aku. aku bakal ubah sifat\" ini ya sayangku. aku juga minta maaf atas waktu yang ga banyak aku kasi ke kamu, kadang aku tidur, kadang ada temen hehe, aku minta maaf ya bayiii.</div>
+<button onclick="show('senang6')">lanjut</button>
+</div>
+
+<div class="slide" id="senang6">
+<div class="text-box">langsung aja yaaa hehehehe</div>
+<button onclick="show('nembak')">lanjut</button>
+</div>
+
+<!-- NEMBAK -->
+<div class="slide" id="nembak">
+<div class="text-box">abel, bayiku, sayangku, cintaku, duniaku, manisku. aku suka sama kamu, aku nyaman sama kamu, aku udah anggap kamu rumah sayang, maka dari itu kamu mau ga jadi pacar aku yang gg abizzz ini?</div>
+<button onclick="show('mau1')">MAUUUUU</button>
+<button onclick="show('gamau1')">gamau</button>
+</div>
+
+<!-- MAU -->
+<div class="slide" id="mau1">
+<div class="text-box">hehehehehe makasi ya sayang, anjayyy udah jadian yahaha. anjay gg abizzzzzzzz</div>
+<button onclick="show('mau2')">SAMA-SAMA</button>
+</div>
+
+<div class="slide" id="mau2">
+<div class="text-box">sama-sama? mau sama-sama terus ya? aku juga mau yahaha. sama aku terus ya sayangkuuuuuuu</div>
+<button onclick="show('mau3')">lanjut</button>
+</div>
+
+<div class="slide" id="mau3">
+<div class="text-box">sekarang kita udah pacaran, kalau kamu sedih, seneng atau apapun yang kamu rasain, kamu harus kasi tau aku yaa? begitu juga aku. semoga ke depan setiap ada masalah kita bisa hadapin bareng ya sayang?</div>
+<button onclick="show('mau4')">lanjut</button>
+</div>
+
+<div class="slide" id="mau4">
+<div class="text-box">udah abis slidenya hehe, tapi tenang aja cintaku ke kamu ga bakal abizzz</div>
+<button onclick="show('mau5')">yahh abis</button>
+</div>
+
+<div class="slide" id="mau5">
+<div class="text-box">eh 1 lagi ni, roblox kita</div>
+<button onclick="show('roblox')">lanjut</button>
+</div>
+
+<div class="slide" id="roblox" style="background:url('roblox.jpg') center/cover;">
+<div class="text-box">hehe</div>
+</div>
+
+<!-- GAMAU -->
+<div class="slide" id="gamau1">
+<div class="text-box">kok ga mau? kok. gak. mau? aku ini gg loo, masa ditolak orang gg. dahlah cukup sampe sini membantu kamu dalam pengejaran killer, setboi banget aku.</div>
+<button onclick="show('gamau2')">lanjut</button>
+</div>
+
+<div class="slide" id="gamau2">
+<div class="text-box">kok masi lanjut? mau baca apa? 😡</div>
+<button onclick="show('mau1')">tapi boong, aku mauuuuuuu</button>
+<button onclick="show('mau1')">becanda my gg, udah pasti mau</button>
+</div>
+
+<!-- GAME -->
+<div class="slide" id="game1">
+<div class="text-box">yaudah ayo main game biar seneng dikit</div>
+<button onclick="show('game2')">ayo</button>
+<button onclick="show('paksa')">gak mau</button>
+</div>
+
+<div class="slide" id="paksa">
+<div class="text-box">harus mau bayiku, aku maksa 😁</div>
+<button onclick="show('game1')">lanjut</button>
+</div>
+
+<div class="slide" id="game2">
+<div class="text-box">apa yang lebih indah dari senyumnya kamu?</div>
+<button onclick="show('game3')">a. gak ada</button>
+<button onclick="show('game3')">b. GAK MUNGKIN ADA</button>
+<button onclick="show('game3')">c. fix gada</button>
+<button onclick="show('game3')">d. tidak ada</button>
+</div>
+
+<div class="slide" id="game3">
+<div class="text-box">udah pasti gak ada kan, kamu wajib senang</div>
+<button onclick="show('senang1')">lanjut</button>
+</div>
+
+<!-- SEDIH -->
+<div class="slide" id="sedih">
+<div class="text-box">kamu sedih kenapa sayangku? coba kasi tau aku, maaf yaa kalau sedih malah aku kirim ginian</div>
+</div>
+
+</div>
+
+<!-- 🔥 AUDIO -->
+<audio id="music" loop>
+  <source src="lagu.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+const slides=document.querySelectorAll('.slide');
+
+function show(id){
+  slides.forEach(s=>s.classList.remove('active'));
+  document.getElementById(id).classList.add('active');
+
+  playMusic();
+}
+
+function playMusic(){
+  const music = document.getElementById("music");
+  if(music.paused){
+    music.play();
+  }
+}
+</script>
+
+</body>
+</html>
